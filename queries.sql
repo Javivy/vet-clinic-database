@@ -13,3 +13,5 @@ SELECT name, neutered FROM animals WHERE neutered='1';
 SELECT * FROM animals WHERE name!='Gabumon';
 
 SELECT * FROM animals WHERE weight_kg BETWEEN 10.4 AND 17.3;
+
+SELECT name FROM animals WHERE neutered='1' AND escape_attempts < 3;
