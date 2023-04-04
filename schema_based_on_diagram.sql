@@ -40,9 +40,13 @@ CREATE TABLE treatments (
 );
 
 CREATE TABLE medical_history_treatment (
-  medical_history_id int ,
+  medical_history_id int,
   treatment_id int,
   FOREIGN KEY (medical_history_id) REFERENCES medical_histories (id),
   FOREIGN KEY (treatment_id) REFERENCES treatments (id),
-  
 );
+
+CREATE INDEX invoice_id_index ON invoice_items(invoice_id);
+CREATE INDEX patient_id_index ON medical_histories(patient_id);
+CREATE INDEX medical_history_id_index ON medical_history_treatment(medical_history_id);
+CREATE INDEX treatment_id_index ON medical_history_treatment(treatment_id);
