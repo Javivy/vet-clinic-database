@@ -38,3 +38,11 @@ CREATE TABLE treatments (
   type varchar(100),
   name varchar(100)
 );
+
+CREATE TABLE medical_history_treatment (
+  medical_history_id int ,
+  treatment_id int,
+  FOREIGN KEY (medical_history_id) REFERENCES medical_histories (id),
+  FOREIGN KEY (treatment_id) REFERENCES treatments (id),
+  
+);
