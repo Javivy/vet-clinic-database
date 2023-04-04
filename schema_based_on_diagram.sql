@@ -24,3 +24,12 @@ CREATE TABLE invoice_items (
   FOREIGN KEY (invoice_id) REFERENCES invoices(id),
   PRIMARY KEY(id) 
 );
+
+CREATE TABLE medical_histories (
+  id int PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+  admitted_at timestamp,
+  patient_id int,
+  status varchar(20),
+  FOREIGN KEY (patient_id) REFERENCES patients (id)
+);
+
