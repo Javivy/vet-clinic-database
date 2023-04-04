@@ -33,3 +33,8 @@ CREATE TABLE medical_histories (
   FOREIGN KEY (patient_id) REFERENCES patients (id)
 );
 
+CREATE TABLE treatments (
+  id int PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+  type varchar(100),
+  name varchar(100)
+);
