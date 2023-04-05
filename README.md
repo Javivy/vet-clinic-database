@@ -124,6 +124,10 @@ Clone this repository to your desired folder:
 - LinkedIn: [Javier Vargas](https://www.linkedin.com/in/javier-alejandro-vargas-ortega)
 - Twitter [@Javivy_2803](https://twitter.com/Javivy_2803)
 
+👤 **Kender**
+
+- GitHub: [@kensteph](https://github.com/kensteph)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
